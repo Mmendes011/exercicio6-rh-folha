@@ -1,7 +1,9 @@
 # Exercício 6 – Sprint Ágil de Refatoração de Banco de Dados
 
 **Turma:** 1CDD1
+
 **Cenário 11:** Sistema de RH e Folha de Pagamento
+
 **Dupla:**
 
 | Integrante | Papel |
@@ -9,7 +11,7 @@
 | Murilo Mendes | Product Owner / Revisor |
 | Felipe Mira | Scrum Master / Desenvolvedor |
 
-**Quadro Kanban (Trello):** _(colar o link aqui)_
+**Quadro Kanban (Trello):** https://trello.com/b/njuOOh5Q
 
 ## O problema
 
@@ -61,7 +63,14 @@ Testado do zero em banco limpo. Requer MySQL 8.0.16 ou mais novo (por causa do `
 
 ## Como trabalhamos (Git)
 
-- Uma branch por etapa (`feature/...`), nada direto na `main`.
-- Todo merge passa por Pull Request revisado pelo outro integrante.
-- Antes de aprovar, o revisor roda os scripts em banco limpo e confere se as
-  consultas de conferência do script 03 voltam vazias.
+- Uma branch por etapa (`feature/...`), nada direto na `main` depois do commit inicial.
+- Todo merge passou por Pull Request com comentário de revisão.
+- Antes de mesclar, os scripts foram rodados em banco limpo e as consultas de
+  conferência do script 03 voltaram vazias.
+
+| PR | Branch | Scripts | User stories |
+| --- | --- | --- | --- |
+| [#1](https://github.com/Mmendes011/exercicio6-rh-folha/pull/1) | `feature/tabelas-dominio` | 02 | US01, US02, US03 |
+| [#2](https://github.com/Mmendes011/exercicio6-rh-folha/pull/2) | `feature/migracao-dados` | 03 | US03, US04 |
+| [#3](https://github.com/Mmendes011/exercicio6-rh-folha/pull/3) | `feature/refatoracao-estrutura` | 04 | US05, US06 |
+| [#4](https://github.com/Mmendes011/exercicio6-rh-folha/pull/4) | `feature/dml-novo-modelo` | 05 e 06 | US07, US08 |
